@@ -1,0 +1,21 @@
+:root {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+
+  --primary-dark-cyn: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+
+  --neutral-dark-blue: hsl(212, 21%, 14%);
+  --neutral-grayish-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  background-color: var(--primary-cream);
+}

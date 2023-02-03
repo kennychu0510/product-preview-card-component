@@ -1,0 +1,123 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Card {
+  background-color: var(--neutral-white);
+  width: 55vw;
+  min-width: 375px;
+  min-height: 400px;
+  height: fit-content;
+  border-radius: 10px;
+  display: flex;
+}
+
+.Image-container {
+  background-image: url('./assets/image-product-desktop.jpg');
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.Content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--neutral-grayish-blue);
+}
+
+.Header {
+  margin: 20px 0;
+  font-family: Fraunces;
+  color: var(--neutral-dark-blue);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.Description {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: var(--neutral-grayish-blue);
+  margin-bottom: 20px;
+}
+
+.Price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Price {
+  font-family: Fraunces;
+  font-weight: 700;
+  color: var(--primary-dark-cyn);
+}
+
+.Price-discount {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.Price-original {
+  font-size: 12px;
+  color: var(--neutral-grayish-blue);
+  text-decoration: line-through;
+  text-decoration-color: var(--neutral-grayish-blue);
+}
+
+.Button {
+  background-color: var(--primary-dark-cyn);
+  padding: 10px;
+  color: var(--neutral-white);
+  font-family: Montserrat;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: auto;
+  width: calc(100% - 20px)
+}
+
+.Button > svg {
+  transform: scale(0.8);
+  margin-right: 10px;
+}
+
+@media screen and (width <= 375px) {
+  .Card {
+    min-width: calc(375px - 40px);
+    height: calc(100vh - 40px);
+    flex-direction: column;
+  }
+
+  .Image-container {
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .Header {
+    margin: 10px 0;
+  }
+  
+}
